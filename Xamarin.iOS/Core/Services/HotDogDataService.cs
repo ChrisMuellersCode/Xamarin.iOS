@@ -26,5 +26,10 @@ namespace Core.Services
         {
             return repository.GetHotDogsForGroup(hotDogGroupId);
         }
+
+        public HotDog GetHotDogById(int id)
+        {
+            return repository.GetHotDogById(id);
+        }
     }
 }

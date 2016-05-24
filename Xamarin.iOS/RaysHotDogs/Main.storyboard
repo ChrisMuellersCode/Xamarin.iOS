@@ -1,25 +1,206 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
-  <dependencies>
-    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204" />
-  </dependencies>
-  <scenes>
-    <!--View Controller-->
-    <scene sceneID="tne-QT-ifu">
-      <objects>
-        <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-          <layoutGuides>
-            <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ" />
-            <viewControllerLayoutGuide type="bottom" id="wfy-db-euE" />
-          </layoutGuides>
-          <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600" />
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite" />
-          </view>
-        </viewController>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder" />
-      </objects>
-    </scene>
-  </scenes>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HotDogDetailsViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.996078431372549" green="0.7803921568627451" blue="0.396078431372549" alpha="1"/>
+                        <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="14" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="40" width="160" height="240"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="20" y="40" width="360" height="173"/>
+                                    <mask key="constraints">
+                                        <include reference="17"/>
+                                        <include reference="18"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="17" firstAttribute="width" constant="360"/>
+                                    <constraint id="18" firstAttribute="height" constant="173"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="17"/>
+                                        <exclude reference="18"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" minimumFontSize="10" id="19" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="238" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="20" y="238" width="360" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="22"/>
+                                        <include reference="23"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="22" firstAttribute="width" constant="360"/>
+                                    <constraint id="23" firstAttribute="height" constant="21"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="22"/>
+                                        <exclude reference="23"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ShotDescription" lineBreakMode="tailTruncation" minimumFontSize="10" id="24" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="290" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <rect key="frame" x="20" y="290" width="360" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="27"/>
+                                        <include reference="28"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="27" firstAttribute="width" constant="360"/>
+                                    <constraint id="28" firstAttribute="height" constant="21"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="27"/>
+                                        <exclude reference="28"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="30" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="550" width="46" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="550" width="58" height="30"/>
+                                </variation>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="31" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet." textAlignment="natural">
+                                <rect key="frame" x="20" y="328" width="97" height="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="319" width="360" height="134"/>
+                                </variation>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Price" lineBreakMode="tailTruncation" minimumFontSize="10" id="32" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="19" y="476" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="19" y="476" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" minimumFontSize="17" id="33" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="132" y="550" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="132" y="550" width="97" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="333" y="550" width="46" height="30"/>
+                                <state key="normal" title="Add to cart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="279" y="550" width="100" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="14"/>
+                                <exclude reference="19"/>
+                                <exclude reference="24"/>
+                                <exclude reference="30"/>
+                                <exclude reference="31"/>
+                                <exclude reference="32"/>
+                                <exclude reference="33"/>
+                                <exclude reference="34"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="15"/>
+                                <exclude reference="16"/>
+                                <exclude reference="20"/>
+                                <exclude reference="21"/>
+                                <exclude reference="25"/>
+                                <exclude reference="26"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="14"/>
+                                <include reference="19"/>
+                                <include reference="24"/>
+                                <include reference="30"/>
+                                <include reference="31"/>
+                                <include reference="32"/>
+                                <include reference="33"/>
+                                <include reference="34"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="15"/>
+                                <include reference="16"/>
+                                <include reference="20"/>
+                                <include reference="21"/>
+                                <include reference="25"/>
+                                <include reference="26"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="15" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="14" secondAttribute="trailing" constant="20"/>
+                            <constraint id="16" firstItem="14" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40"/>
+                            <constraint id="20" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="19" secondAttribute="trailing" constant="20"/>
+                            <constraint id="21" firstItem="19" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="238"/>
+                            <constraint id="25" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="24" secondAttribute="trailing" constant="20"/>
+                            <constraint id="26" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="24" secondAttribute="bottom" constant="289"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HotDogImageView" destination="14" id="name-outlet-14"/>
+                        <outlet property="NameLabel" destination="19" id="name-outlet-19"/>
+                        <outlet property="ShortDescriptionLabel" destination="24" id="name-outlet-24"/>
+                        <outlet property="CancelButton" destination="30" id="name-outlet-30"/>
+                        <outlet property="LongDescriptionText" destination="31" id="name-outlet-31"/>
+                        <outlet property="PriceLabel" destination="32" id="name-outlet-32"/>
+                        <outlet property="amountText" destination="33" id="name-outlet-33"/>
+                        <outlet property="ButtonAddToCart" destination="34" id="name-outlet-34"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Images/hotdog1.jpg" width="926" height="800"/>
+    </resources>
 </document>

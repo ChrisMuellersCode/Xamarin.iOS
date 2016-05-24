@@ -6,23 +6,13 @@ namespace Core.Repositories
 {
     public class HotDogRepository
     {
-        public List<HotDog> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<HotDog> GetHotDogById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         private static List<HotDogGroup> hotDogGroups = new List<HotDogGroup>
         {
             new HotDogGroup
             {
                 Id = 1,
                 Title = "Meat Lovers",
-                ImagePath = "",
+                ImagePath = "hotdog1",
                 HotDogs = new List<HotDog>
                 {
                     new HotDog
@@ -58,6 +48,16 @@ namespace Core.Repositories
                 }
             }
         };
+
+        public List<HotDog> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public HotDog GetHotDogById(int id)
+        {
+            throw new NotImplementedException();
+        }
 
         public List<HotDogGroup> GetGroupedHotDogs()
         {
