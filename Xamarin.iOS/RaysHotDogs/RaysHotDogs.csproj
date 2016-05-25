@@ -84,9 +84,14 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DataSources\HotDogDataSource.cs" />
     <Compile Include="HotDogDetailsViewController.cs" />
     <Compile Include="HotDogDetailsViewController.designer.cs">
       <DependentUpon>HotDogDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotDogTableViewController.cs" />
+    <Compile Include="HotDogTableViewController.designer.cs">
+      <DependentUpon>HotDogTableViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
