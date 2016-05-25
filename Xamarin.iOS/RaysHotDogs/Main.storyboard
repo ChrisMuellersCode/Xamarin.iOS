@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="93">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="125">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
     </dependencies>
@@ -331,6 +331,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue id="531" destination="BYZ-38-t0r" kind="show" identifier="HotDogDetailsSegue"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -346,7 +349,7 @@
         </scene>
         <scene sceneID="111">
             <objects>
-                <viewController id="112" sceneMemberID="viewController">
+                <viewController id="112" sceneMemberID="viewController" customClass="MainMenuController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="109"/>
                         <viewControllerLayoutGuide type="bottom" id="110"/>
@@ -356,58 +359,77 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="1" green="0.7803921568627451" blue="0.396078431372549" alpha="1"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="118" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="151" y="158" width="46" height="30"/>
-                                <state key="normal" title="Create Your Order">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="537" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="118" width="46" height="30"/>
+                                <state key="normal" title="Create your order">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleColor" colorSpace="calibratedRGB" red="0.19215686274509805" green="0.30588235294117649" blue="0.52156862745098043" alpha="1"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="98" y="83" width="179" height="30"/>
+                                    <rect key="frame" x="72" y="114" width="231" height="30"/>
                                     <mask key="constraints">
-                                        <include reference="121"/>
+                                        <include reference="724"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue id="1109" destination="93" kind="show"/>
+                                </connections>
                                 <constraints>
-                                    <constraint id="121" firstAttribute="width" constant="179"/>
+                                    <constraint id="724" firstAttribute="width" constant="231"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="121"/>
+                                        <exclude reference="724"/>
                                     </mask>
                                 </variation>
                             </button>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="118"/>
+                                <exclude reference="537"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="119"/>
-                                <exclude reference="120"/>
+                                <exclude reference="722"/>
+                                <exclude reference="723"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="118"/>
+                                <include reference="537"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="119"/>
-                                <include reference="120"/>
+                                <include reference="722"/>
+                                <include reference="723"/>
                             </mask>
                         </variation>
                         <constraints>
-                            <constraint id="119" firstItem="113" firstAttribute="trailing" secondItem="118" secondAttribute="trailing" constant="98"/>
-                            <constraint id="120" firstItem="118" firstAttribute="top" secondItem="113" secondAttribute="top" constant="83"/>
+                            <constraint id="722" firstItem="113" firstAttribute="trailing" secondItem="537" secondAttribute="trailing" constant="72"/>
+                            <constraint id="723" firstItem="537" firstAttribute="top" secondItem="113" secondAttribute="top" constant="114"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ButtonCreateYourOrder" destination="118" id="name-outlet-118"/>
+                        <outlet property="CreateOrderButton" destination="537" id="name-outlet-537"/>
                     </connections>
+                    <navigationItem title="Welcome to Ray's Hot Dogs" id="366" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="114" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-863" y="106"/>
+        </scene>
+        <scene sceneID="124">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="125" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="128">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="367" destination="112" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="129" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1625" y="-8"/>
         </scene>
     </scenes>
     <resources>

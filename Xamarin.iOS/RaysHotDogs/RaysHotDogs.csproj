@@ -98,6 +98,10 @@
     <Compile Include="AppDelegate.cs" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
+    <Compile Include="MainMenuController.cs" />
+    <Compile Include="MainMenuController.designer.cs">
+      <DependentUpon>MainMenuController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -41,5 +41,10 @@ namespace RaysHotDogs.DataSources
         {
             return hotDogs.Count;
         }
+
+        public HotDog GetItem(int row)
+        {
+            return hotDogs[row];
+        }
     }
 }
