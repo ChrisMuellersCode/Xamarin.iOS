@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Core.Model;
 
 namespace Core.Repositories
@@ -51,22 +52,31 @@ namespace Core.Repositories
 
         public List<HotDog> GetAll()
         {
-            throw new NotImplementedException();
+            var hotDogs = new List<HotDog>();
+            foreach (var hotDogGroup in hotDogGroups)
+            {
+                hotDogs.AddRange(hotDogGroup.HotDogs);
+            }
+            return hotDogs;
         }
 
         public HotDog GetHotDogById(int id)
         {
-            throw new NotImplementedException();
+            foreach (var hotDogGroup in hotDogGroups.Where(hotDogGroup => hotDogGroup.HotDogs.Any(hd => hd.Id == id)))
+            {
+                return hotDogGroup.HotDogs.Single(hd => hd.Id == id);
+            }
+            throw new ArgumentException();
         }
 
         public List<HotDogGroup> GetGroupedHotDogs()
         {
-            throw new NotImplementedException();
+            return hotDogGroups;
         }
 
         public List<HotDog> GetHotDogsForGroup(int hotDogGroupId)
         {
-            throw new NotImplementedException();
+            return hotDogGroups.Single(hg => hg.Id == hotDogGroupId).HotDogs;
         }
     }
 }

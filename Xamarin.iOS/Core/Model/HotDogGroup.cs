@@ -10,6 +10,6 @@ namespace Core.Model
 
         public string ImagePath { get; set; }
 
-        public IList<HotDog> HotDogs { get; set; }
+        public List<HotDog> HotDogs { get; set; }
     }
 }
