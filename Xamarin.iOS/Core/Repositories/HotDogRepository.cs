@@ -13,7 +13,7 @@ namespace Core.Repositories
             {
                 Id = 1,
                 Title = "Meat Lovers",
-                ImagePath = "hotdog1",
+                ImagePath = "",
                 HotDogs = new List<HotDog>
                 {
                     new HotDog
@@ -24,10 +24,12 @@ namespace Core.Repositories
                         Description =
                             "bla bla bla8490 4132  fas   fasd f adsjfasdk jöwqfj ac<sdk hjbpo<hernpö<oviuoweu i ",
                         IsAvailable = true,
-                        PrepTime = 10
-
+                        PrepTime = 10,
+                        ImagePath = "hotdog1",
+                        Price = 7
                     }
                 }
+                
             },
             new HotDogGroup
             {
@@ -44,7 +46,9 @@ namespace Core.Repositories
                         Description =
                             "bla bla bla8490 4132  fas   fasd f adsjfasdk jöwqfj ac<sdk hjbpo<hernpö<oviuoweu i ",
                         IsAvailable = true,
-                        PrepTime = 15
+                        PrepTime = 15,
+                        ImagePath = "hotdog1",
+                        Price = 9
                     }
                 }
             }

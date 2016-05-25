@@ -22,19 +22,22 @@
                                 <rect key="frame" x="20" y="40" width="160" height="240"/>
                                 <variation key="widthClass=compact">
                                     <rect key="frame" x="20" y="40" width="360" height="173"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="40" width="335" height="173"/>
                                     <mask key="constraints">
-                                        <include reference="17"/>
-                                        <include reference="18"/>
+                                        <include reference="56"/>
+                                        <include reference="57"/>
                                     </mask>
                                 </variation>
                                 <constraints>
-                                    <constraint id="17" firstAttribute="width" constant="360"/>
-                                    <constraint id="18" firstAttribute="height" constant="173"/>
+                                    <constraint id="56" firstAttribute="width" constant="335"/>
+                                    <constraint id="57" firstAttribute="height" constant="173"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="17"/>
-                                        <exclude reference="18"/>
+                                        <exclude reference="56"/>
+                                        <exclude reference="57"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -46,19 +49,22 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <rect key="frame" x="20" y="238" width="360" height="21"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="238" width="335" height="21"/>
                                     <mask key="constraints">
-                                        <include reference="22"/>
-                                        <include reference="23"/>
+                                        <include reference="60"/>
+                                        <include reference="61"/>
                                     </mask>
                                 </variation>
                                 <constraints>
-                                    <constraint id="22" firstAttribute="width" constant="360"/>
-                                    <constraint id="23" firstAttribute="height" constant="21"/>
+                                    <constraint id="60" firstAttribute="width" constant="335"/>
+                                    <constraint id="61" firstAttribute="height" constant="21"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="22"/>
-                                        <exclude reference="23"/>
+                                        <exclude reference="60"/>
+                                        <exclude reference="61"/>
                                     </mask>
                                 </variation>
                             </label>
@@ -70,44 +76,50 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact">
                                     <rect key="frame" x="20" y="290" width="360" height="21"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="19" y="267" width="335" height="21"/>
                                     <mask key="constraints">
-                                        <include reference="27"/>
-                                        <include reference="28"/>
+                                        <include reference="64"/>
+                                        <include reference="65"/>
                                     </mask>
                                 </variation>
                                 <constraints>
-                                    <constraint id="27" firstAttribute="width" constant="360"/>
-                                    <constraint id="28" firstAttribute="height" constant="21"/>
+                                    <constraint id="64" firstAttribute="width" constant="335"/>
+                                    <constraint id="65" firstAttribute="height" constant="21"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="27"/>
-                                        <exclude reference="28"/>
+                                        <exclude reference="64"/>
+                                        <exclude reference="65"/>
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="30" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="30" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="20" y="550" width="46" height="30"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.19215686274509805" green="0.30588235294117649" blue="0.52156862745098043" alpha="1"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="19" y="550" width="58" height="30"/>
                                 </variation>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="31" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet." textAlignment="natural">
-                                <rect key="frame" x="20" y="328" width="97" height="30"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="19" y="319" width="360" height="134"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="617" width="58" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="84"/>
+                                    </mask>
                                 </variation>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Price" lineBreakMode="tailTruncation" minimumFontSize="10" id="32" translatesAutoresizingMaskIntoConstraints="NO">
+                                <constraints>
+                                    <constraint id="84" firstAttribute="width" constant="58"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="84"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Price" lineBreakMode="tailTruncation" minimumFontSize="10" id="32" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="19" y="476" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -116,24 +128,95 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="19" y="476" width="42" height="21"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="521" width="39" height="20"/>
+                                    <mask key="constraints">
+                                        <include reference="72"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="72" firstAttribute="height" constant="20"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="72"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" minimumFontSize="17" id="33" translatesAutoresizingMaskIntoConstraints="NO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" minimumFontSize="17" id="33" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="132" y="550" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="132" y="550" width="97" height="30"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="139" y="617" width="64" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="81"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="81" firstAttribute="width" constant="64"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="81"/>
+                                    </mask>
+                                </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="333" y="550" width="46" height="30"/>
                                 <state key="normal" title="Add to cart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.19215686274509805" green="0.30588235294117649" blue="0.52156862745098043" alpha="1"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="279" y="550" width="100" height="30"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="254" y="617" width="100" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="87"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="87" firstAttribute="width" constant="100"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="87"/>
+                                    </mask>
+                                </variation>
                             </button>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" id="47" translatesAutoresizingMaskIntoConstraints="NO" editable="NO" selectable="NO" opaque="NO" userInteractionEnabled="NO">
+                                <rect key="frame" x="170" y="160" width="160" height="240"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="296" width="335" height="217"/>
+                                    <mask key="constraints">
+                                        <include reference="68"/>
+                                        <include reference="69"/>
+                                    </mask>
+                                </variation>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                <constraints>
+                                    <constraint id="68" firstAttribute="width" constant="335"/>
+                                    <constraint id="69" firstAttribute="height" constant="217"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="68"/>
+                                        <exclude reference="69"/>
+                                    </mask>
+                                </variation>
+                            </textView>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
@@ -141,18 +224,28 @@
                                 <exclude reference="19"/>
                                 <exclude reference="24"/>
                                 <exclude reference="30"/>
-                                <exclude reference="31"/>
                                 <exclude reference="32"/>
                                 <exclude reference="33"/>
                                 <exclude reference="34"/>
+                                <exclude reference="47"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="15"/>
-                                <exclude reference="16"/>
-                                <exclude reference="20"/>
-                                <exclude reference="21"/>
-                                <exclude reference="25"/>
-                                <exclude reference="26"/>
+                                <exclude reference="54"/>
+                                <exclude reference="55"/>
+                                <exclude reference="58"/>
+                                <exclude reference="59"/>
+                                <exclude reference="62"/>
+                                <exclude reference="63"/>
+                                <exclude reference="66"/>
+                                <exclude reference="67"/>
+                                <exclude reference="70"/>
+                                <exclude reference="71"/>
+                                <exclude reference="79"/>
+                                <exclude reference="80"/>
+                                <exclude reference="82"/>
+                                <exclude reference="83"/>
+                                <exclude reference="85"/>
+                                <exclude reference="86"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -161,38 +254,62 @@
                                 <include reference="19"/>
                                 <include reference="24"/>
                                 <include reference="30"/>
-                                <include reference="31"/>
                                 <include reference="32"/>
                                 <include reference="33"/>
                                 <include reference="34"/>
                             </mask>
-                            <mask key="constraints">
-                                <include reference="15"/>
-                                <include reference="16"/>
-                                <include reference="20"/>
-                                <include reference="21"/>
-                                <include reference="25"/>
-                                <include reference="26"/>
-                            </mask>
                         </variation>
                         <constraints>
-                            <constraint id="15" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="14" secondAttribute="trailing" constant="20"/>
-                            <constraint id="16" firstItem="14" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40"/>
-                            <constraint id="20" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="19" secondAttribute="trailing" constant="20"/>
-                            <constraint id="21" firstItem="19" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="238"/>
-                            <constraint id="25" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="24" secondAttribute="trailing" constant="20"/>
-                            <constraint id="26" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="24" secondAttribute="bottom" constant="289"/>
+                            <constraint id="54" firstItem="14" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40"/>
+                            <constraint id="55" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="14" secondAttribute="trailing" constant="20"/>
+                            <constraint id="58" firstItem="19" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="238"/>
+                            <constraint id="59" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="19" secondAttribute="trailing" constant="20"/>
+                            <constraint id="62" firstItem="24" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="267"/>
+                            <constraint id="63" firstItem="24" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="19"/>
+                            <constraint id="66" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="47" secondAttribute="bottom" constant="154"/>
+                            <constraint id="67" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="47" secondAttribute="trailing" constant="20"/>
+                            <constraint id="70" firstItem="32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="71" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="32" secondAttribute="bottom" constant="126"/>
+                            <constraint id="79" firstItem="33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="139"/>
+                            <constraint id="80" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="33" secondAttribute="bottom" constant="20"/>
+                            <constraint id="82" firstItem="30" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="83" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="30" secondAttribute="bottom" constant="20"/>
+                            <constraint id="85" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="34" secondAttribute="trailing" constant="21"/>
+                            <constraint id="86" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="34" secondAttribute="bottom" constant="20"/>
                         </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="54"/>
+                                <include reference="55"/>
+                                <include reference="58"/>
+                                <include reference="59"/>
+                                <include reference="62"/>
+                                <include reference="63"/>
+                                <include reference="66"/>
+                                <include reference="67"/>
+                                <include reference="70"/>
+                                <include reference="71"/>
+                                <include reference="79"/>
+                                <include reference="80"/>
+                                <include reference="82"/>
+                                <include reference="83"/>
+                                <include reference="85"/>
+                                <include reference="86"/>
+                            </mask>
+                            <mask key="subviews">
+                                <include reference="47"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="HotDogImageView" destination="14" id="name-outlet-14"/>
                         <outlet property="NameLabel" destination="19" id="name-outlet-19"/>
                         <outlet property="ShortDescriptionLabel" destination="24" id="name-outlet-24"/>
                         <outlet property="CancelButton" destination="30" id="name-outlet-30"/>
-                        <outlet property="LongDescriptionText" destination="31" id="name-outlet-31"/>
                         <outlet property="PriceLabel" destination="32" id="name-outlet-32"/>
                         <outlet property="amountText" destination="33" id="name-outlet-33"/>
                         <outlet property="ButtonAddToCart" destination="34" id="name-outlet-34"/>
+                        <outlet property="LongDescriptionText" destination="47" id="name-outlet-47"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -203,4 +320,7 @@
     <resources>
         <image name="Images/hotdog1.jpg" width="926" height="800"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
 </document>

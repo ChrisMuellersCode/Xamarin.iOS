@@ -32,7 +32,7 @@ namespace RaysHotDogs
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UITextField LongDescriptionText { get; set; }
+		UITextView LongDescriptionText { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
